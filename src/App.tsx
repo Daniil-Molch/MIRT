@@ -7,7 +7,7 @@ import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="confidicial" element={<PrivacyPage />} />
